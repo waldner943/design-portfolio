@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<!-- Add the new slick-theme.css if you want the default styling -->
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="photoshop/logo1.png" class="logo"></a>
+		<h2>Ryuji .inc</h2>
+		<nav id="nav-drawer">
+			<input id="nav-input" type="checkbox" class="nav-unshown">
+			<label id="nav-open" for="nav-input"><span></span></label>
+			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+			<div id="nav-content">
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="#price">Price</a></li>
+					<li><a href="#about-us">About us</a></li>
+					<li><a href="#contact-us">Contact us</a></li>
+				</ul>
+
+			</div>
+		</nav>
+
+	</header>
+	
+	<main>
+		<!-- .carousel ------------------->
+		<div class="carousel">
+			<div class="slider">
+				<img src="photoshop/clover.jpg">
+				<img src="photoshop/5G.jpg">
+				<img src="photoshop/sleep.jpg">
+				<img src="photoshop/coronavirus.jpg">
+				<img src="photoshop/note.jpg">
+				<img src="photoshop/standing.jpg">
+				<img src="photoshop/which-is.jpg">
+				<img src="photoshop/coffee.jpg">
+			</div>
+			<div class="slider-nav">
+				<img src="photoshop/clover.jpg">
+				<img src="photoshop/5G.jpg">
+				<img src="photoshop/sleep.jpg">
+				<img src="photoshop/coronavirus.jpg">
+				<img src="photoshop/note.jpg">
+				<img src="photoshop/standing.jpg">
+				<img src="photoshop/which-is.jpg">
+				<img src="photoshop/coffee.jpg">
+			</div>
+		</div>
+		<div class="btn-container">
+			<a href="#" class="btn">Lean More</a>
+		</div>
+
+		<!-- animation ------------------->
+		<div class="animation">
+			<div class="box box1"></div>
+			<div class="box box2"></div>
+			<div class="box box3"></div>
+		</div>
+		
+		
+		
+		<!-- price ----------------------------->
+		<div class="price" id="price">
+			<h1>Price</h1><hr>
+			<div class="one">
+				<div class="text-content">
+					<h2>1 page ... 500 php</h2>
+				</div>
+				<div class="image-content">
+					<div class="price-box price-box01"></div>
+				</div>
+			</div>
+			<hr>
+			<div class="five">
+				<div class="text-content">
+					<h2>5 pages ... 2400 php</h2>
+				</div>
+				<div class="image-content index">
+					<div class="price-box price-box1"></div>
+					<div class="price-box price-box2"></div>
+					<div class="price-box price-box3"></div>
+					<div class="price-box price-box4"></div>
+					<div class="price-box price-box5"></div>
+				</div>
+			</div>
+			<hr>
+		</div>
+		
+
+		<!-- about-us & contact-us -------------->
+		<div class="information">
+			<div class="about-us" id="about-us">
+				<h3>About us</h3>
+				<br>
+				<p>RYUJI.INC</p>
+				<p>Address:</p>
+				<p>Avida Towers Cebu, Inez Villa Street, Apas, Cebu City, 6000 Cebu</p>
+				<p>TEL: 0926-1234-5678</p>
+
+			</div>
+			<div class="contact-us" id="contact-us">
+				<h3>Contact us</h3>
+				<br>
+				<p>Email address : ryuji@gmail.com</p>
+
+			</div>
+		</div>
+
+		<div class="pencil"></div>
+	</main>
+
+	<footer>
+		<p>Copyright© Ryuji Ishida All rights reserved.</p>
+	</footer>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+		$('.slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider',
+		dots: true,
+		centerMode: true,
+		focusOnSelect: true
+		});
+	</script>
+</body>
+</html>
